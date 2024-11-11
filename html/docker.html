@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Docker</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/icons8.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card">
+         <p class="subtitle">Docker</p>
+         <h3 id="rt-0"> Общие команды</h3>
+         <ul>
+            <li>docker info - получение информации о Docker-системе.</li>
+            <li>docker version - просмотр версии Docker.</li>
+            <li>docker help - получение справки по командам Docker.</li>
+         </ul>   
+         <h3 id="rt-1"> Управление образами</h3>
+         <ul>
+            <li>docker pull "имя-образа" - загрузка образа из Docker Hub или другого реестра.</li>
+            <li>docker images - просмотр списка локально сохраненных образов.</li>
+            <li>docker rmi "имя-образа" - удаление образа.</li>
+            <li>docker build -t "имя-образа":"тег" "путь" - создание образа из Dockerfile.</li>
+         </ul>
+         <h3 id="rt-2"> Управление контейнерами</h3>
+         <ul>
+            <li>docker run "имя-образа" - запуск нового контейнера.</li>
+            <li>docker run -d "имя-образа" - запуск контейнера в фоновом режиме (detached mode).</li>
+            <li>docker ps - просмотр запущенных контейнеров.</li>
+            <li>docker ps -a - просмотр всех контейнеров, включая остановленные.</li>
+            <li>docker stop "идентификатор-контейнера" - остановка запущенного контейнера.</li>
+         </ul>
+         <h3 id="rt-3"> Работа с сетью</h3>
+         <ul>
+            <li>docker network ls - просмотр всех сетей.</li>
+            <li>ocker network create "имя-сети" - создание новой сети.</li>
+            <li>docker network inspect "имя-сети" - просмотр информации о сети.</li>
+            <li>docker network rm "имя-сети" - удаление сети.</li>
+         </ul>
+         <h3 id="rt-4"> Работа с томами (volumes)</h3>
+         <ul>
+            <li>docker volume ls - просмотр всех томов.</li>
+            <li>docker volume create "имя-тома" - создание нового тома.</li>
+            <li>docker volume inspect "имя-тома" - просмотр информации о томе.</li>
+            <li>docker volume rm "имя-тома" - удаление тома.</li>
+         </ul>
+         <h3 id="rt-5"> Управление Docker Compose</h3>
+         <ul>
+            <li>docker-compose up - запуск сервисов, определенных в docker-compose.yml</li>
+            <li>docker-compose down - остановка и удаление контейнеров, созданных с помощью docker-compose</li>
+            <li>docker-compose ps - просмотр состояния сервисов.</li>
+         </ul>
+         <br>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         <p class="location" align="center">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>
